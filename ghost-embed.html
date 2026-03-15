@@ -1,0 +1,48 @@
+<!--
+  Ghost Page Embed for Mise Landing Page
+
+  Usage: Set this as the Ghost page's code injection (codeinjection_head).
+  This replaces the entire Ghost page with a full-screen iframe pointing
+  to the GitHub Pages deployment, which is the source of truth.
+
+  Alternative: Place this entire file content as an "HTML card" in
+  Ghost's Koenig/Lexical editor for the /mise page.
+-->
+<style>
+  /* Hide all Ghost chrome */
+  .gh-head, .gh-foot, .gh-navigation, .site-header, .site-footer,
+  header.gh-head, .gh-viewport > header, .gh-viewport > footer,
+  .gh-article-header, .article-title, .gh-content > :not(.mise-embed),
+  .gh-post-content > :not(.mise-embed) {
+    display: none !important;
+  }
+
+  /* Reset Ghost content constraints */
+  body, .gh-viewport, .gh-main, .gh-content, .gh-canvas, .gh-article,
+  .gh-post-content, main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Full-screen iframe */
+  .mise-embed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+  }
+
+  .mise-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
+
+<div class="mise-embed">
+  <iframe src="https://gragera-boti.github.io/mise-landing/" title="Mise — Recipe Organizer, Meal Planner & Grocery Lists for iPhone & iPad" loading="eager"></iframe>
+</div>
