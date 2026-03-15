@@ -20,6 +20,13 @@ body, .gh-viewport, .gh-main, .gh-content, .gh-canvas, .gh-article,
   box-sizing: border-box !important;
 }
 
+/* Ensure our footer renders — Ghost themes may hide/style footer elements */
+.footer, div.footer, .kg-card .footer, .kg-html-card .footer {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 html, body {
   margin: 0 !important;
   padding: 0 !important;
