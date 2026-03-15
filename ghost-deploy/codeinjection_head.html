@@ -2,14 +2,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* === Ghost chrome hiding === */
+/* === Ghost chrome hiding and layout reset === */
 .gh-head, .gh-foot, .gh-navigation, .site-header, .site-footer,
-header.gh-head, .gh-viewport > header, .gh-viewport > footer { display: none !important; }
-body, .gh-viewport, .gh-main, .gh-content, .gh-canvas, .gh-article,
-.gh-post-content, main, .article-title, .gh-article-header {
-  max-width: 100% !important; padding: 0 !important; margin: 0 !important; width: 100% !important;
-}
+header.gh-head, .gh-viewport > header, .gh-viewport > footer,
 .article-title, .gh-article-header { display: none !important; }
+
+body, .gh-viewport, .gh-main, .gh-content, .gh-canvas, .gh-article,
+.gh-post-content, main, article,
+.kg-card, .kg-html-card, .kg-width-full, .kg-width-wide,
+.gh-content > *, .gh-post-content > *,
+.site-content, .post-content, .page-content,
+.inner, .site-main {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
 
 /* ============================================
    Mise Landing Page
