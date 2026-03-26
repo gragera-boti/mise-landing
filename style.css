@@ -518,78 +518,7 @@ body {
   z-index: 2;
 }
 
-/* --- Pricing --- */
-.pricing {
-  padding: 128px 0;
-  background: var(--white);
-}
 
-.pricing-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  max-width: 880px;
-  margin: 0 auto;
-}
-
-.pricing-card {
-  border: 1px solid var(--gray-200);
-  border-radius: 20px;
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-}
-
-.pricing-card--pro {
-  border: 2px solid var(--orange-500);
-  box-shadow: 0 0 0 4px rgba(242, 156, 17, 0.1);
-  transform: translateY(-4px);
-}
-
-.pricing-name {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--gray-800);
-  margin-bottom: 8px;
-}
-
-.pricing-name--pro { color: var(--orange-500); }
-
-.pricing-price {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--gray-950);
-  margin-bottom: 28px;
-  letter-spacing: -0.02em;
-}
-
-.pricing-features {
-  list-style: none;
-  flex: 1;
-  margin-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.pricing-features li {
-  font-size: 15px;
-  color: var(--gray-500);
-  padding-left: 24px;
-  position: relative;
-}
-
-.pricing-features li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--orange-500);
-  font-weight: 600;
-}
-
-.pricing-features li strong { color: var(--gray-800); }
-
-.pricing-card .btn { width: 100%; justify-content: center; }
 
 /* --- Final CTA --- */
 .final-cta {
@@ -725,7 +654,7 @@ body {
 
 @media (max-width: 768px) {
   .features { padding: 80px 0; }
-  .devices, .pricing { padding: 80px 0; }
+  .devices { padding: 80px 0; }
   .final-cta { padding: 100px 0; }
 
   .feature-row {
@@ -756,12 +685,7 @@ body {
     height: 540px;
   }
 
-  .pricing-grid {
-    grid-template-columns: 1fr;
-    max-width: 440px;
-  }
 
-  .pricing-card--pro { transform: none; }
 
   .footer-inner {
     grid-template-columns: 1fr;
@@ -788,7 +712,7 @@ body {
   .hero-ctas .btn-text { width: auto; }
   .hero-subtitle { font-size: 17px; }
 
-  .features, .devices, .pricing { padding: 64px 0; }
+  .features, .devices { padding: 64px 0; }
   .final-cta { padding: 80px 0; }
 
   .phone-frame--hero {
